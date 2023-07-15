@@ -2,7 +2,7 @@ package student;
 
 public class stud {
 	
-	private static int studNumber =0;
+	private static int studNumber =0 ;
 	
 	private String name;
 	private int rollNum;
@@ -26,19 +26,18 @@ public class stud {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	stud(String sName, int sNum, int sAge){
+		this.name = sName;
+		this.rollNum = sNum;
+		this.age = sAge;
+		setStudNumber(getStudNumber() + 1);
+	}
 	public static int getStudNumber() {
 		return studNumber;
 	}
 	public static void setStudNumber(int studNumber) {
 		stud.studNumber = studNumber;
 	}
-	
-	stud(String sName, int sNum, int sAge){
-		this.name = sName;
-		this.rollNum = sNum;
-		this.age = sAge;
-		studNumber++;
-	}
-	
 
 }
