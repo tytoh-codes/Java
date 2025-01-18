@@ -20,7 +20,7 @@ public class student {
 		studentArr[3] = s4;
 		
 		
-		File myFile = new File("C:\\Users\\User\\Desktop\\myDetails.txt");
+		File myFile = new File("C:\\Users\\User\\myDetails.txt");
 		
 		if(!myFile.exists()) {
 			try {
